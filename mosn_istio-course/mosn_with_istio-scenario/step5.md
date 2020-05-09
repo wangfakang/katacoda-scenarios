@@ -16,7 +16,7 @@ https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/produc
 
 #### 指定 reviews 服务按照 v1 和 v3 版本各分配 50% 的流量：
 
-`kubectl apply -f samples/bookinfo/networking/virtual-service-reviews-50-v3.yaml``{{execute}}
+`kubectl apply -f samples/bookinfo/networking/virtual-service-reviews-50-v3.yaml`{{execute}}
 
 点击下面的连接，此时 reviews 会在两个版本中切换：
 

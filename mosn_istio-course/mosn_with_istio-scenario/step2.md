@@ -8,7 +8,7 @@
 
 `export ISTIO_VERSION=1.5.2 && curl -L https://raw.githubusercontent.com/istio/istio/release-1.5/release/downloadIstioCandidate.sh | sh -`{{execute}}
 
-下载的 istio 包名为 `istio-1.5.*`(istio 1.5 的最新版本)，包含：
+下载的 istio 包名为 `istio-1.5.2`，包含：
 - `install/kubernetes`：包含 Kubernetes 相关的 YAML 安装文件。
 - `examples/`：包含示例应用程序。
 - `bin/`：包含 istioctl 的客户端文件。

@@ -8,13 +8,13 @@
 部署注入 Sidecar 后的 Bookinfo 应用：
 `kubectl apply -f bookinfo.yaml`{{execute}}
 
-确认所有服务和 pod 都已经正常启动了，请耐心等待：
+确认所有服务和 pod 都已经正常启动了，可以通过如下命令查看其状态：
 
 `kubectl get services`{{execute}}
 
 `kubectl get pods`{{execute}}
 
-确认 Bookinfo 正常运行：
+当上述状态为 `Running` 后，可通过如下方式确认 Bookinfo 应用是否正常运行：
 
 `kubectl exec -it $(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}') -c ratings -- curl productpage:9080/productpage | grep -o "<title>.*</title>"`{{execute}}
 
