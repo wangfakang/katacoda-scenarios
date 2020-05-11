@@ -2,10 +2,10 @@
 
 #### 初始状态准备
 
-运行以下命令来初始化应用程序版本路由：
+运行以下命令来初始化 `Bookinfo` 应用程序版本路由信息：
 
-$ kubectl apply -f samples/bookinfo/networking/virtual-service-all-v1.yaml
-$ kubectl apply -f samples/bookinfo/networking/virtual-service-reviews-test-v2.yaml
+`kubectl apply -f samples/bookinfo/networking/virtual-service-all-v1.yaml`{{execute}}
+`kubectl apply -f samples/bookinfo/networking/virtual-service-reviews-test-v2.yaml`{{execute}}
 
 经过上面的配置后，其请求链路如下所示：
 

@@ -1,6 +1,6 @@
 {
   "title": "MOSN with Istio",
-  "description": "使用 MOSN 作为 Istio 的数据面来演示 BookInfo 事例。",
+  "description": "使用 MOSN 作为 Istio 的数据面来演示 Bookinfo 示例。",
   "difficulty": "Intermediate",
   "time": "10",
   "details": {

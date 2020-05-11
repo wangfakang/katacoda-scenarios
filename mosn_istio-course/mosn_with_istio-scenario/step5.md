@@ -1,6 +1,6 @@
 ## 验证 MOSN 按 version 路由能力
 
-首先为 BookInfo 的 service 创建一系列的 destination rules：
+首先为 `Bookinfo` 的 service 创建一系列的 destination rules：
 
 `kubectl apply -f samples/bookinfo/networking/destination-rule-all.yaml`{{execute}}
 

@@ -5,7 +5,7 @@
 通过 `kube-inject` 的方式实现Sidecar注入：
 `istioctl kube-inject -f samples/bookinfo/platform/kube/bookinfo.yaml > bookinfo.yaml && sed -i "s/\/usr\/local\/bin\/envoy/\/usr\/local\/bin\/mosn/g" ./bookinfo.yaml`{{execute}}
 
-部署注入 Sidecar 后的 Bookinfo 应用：
+部署注入 `Sidecar` 后的 `Bookinfo` 应用：
 `kubectl apply -f bookinfo.yaml`{{execute}}
 
 确认所有服务和 pod 都已经正常启动了，可以通过如下命令查看其状态：
@@ -14,7 +14,7 @@
 
 `kubectl get pods`{{execute}}
 
-当上述状态为 `Running` 后，可通过如下方式确认 Bookinfo 应用是否正常运行：
+当上述状态为 `Running` 后，可通过如下方式确认 `Bookinfo` 应用是否正常运行：
 
 `kubectl exec -it $(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}') -c ratings -- curl productpage:9080/productpage | grep -o "<title>.*</title>"`{{execute}}
 
@@ -42,7 +42,7 @@
 
 ## 确认访问
 
-可以用 curl 命令来确认是否能够从集群外部访问 Bookinfo 应用程序：
+可以用 curl 命令来确认是否能够从集群外部访问 `Bookinfo` 应用程序：
 
 `curl -s http://${GATEWAY_URL}/productpage | grep -o "<title>.*</title>"`{{execute}}
 
@@ -52,5 +52,5 @@ https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/produc
 
 ## 后续步骤
 
-上面的操作已经完成了 Bookinfo 应用的 mesh 化，接下来我们通过 Istio 来进行 Bookinfo 的服务治理。
+上面的操作已经完成了 `Bookinfo` 应用的 mesh 化，接下来我们通过 Istio 来进行 `Bookinfo` 的服务治理。
 
