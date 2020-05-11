@@ -8,3 +8,7 @@
 
 https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/productpage
 
+## 后续步骤
+
+至此，我们已经通过 version、header 信息验证了 MOSN 的路由功能，接下来将会演示 MOSN 通过 Istio 来进行故障注入的场景。
+

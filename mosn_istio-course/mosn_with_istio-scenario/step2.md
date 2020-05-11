@@ -1,4 +1,4 @@
-从 istio v1.5.x 版本开始，[使用 helm 安装](https://istio.io/zh/docs/setup/install/helm/)的方式已经废弃，需改用 [istioctl 安装](https://istio.io/zh/docs/setup/install/istioctl/)。
+从 istio v1.5.x 版本开始，官方已经废弃了[使用 helm 安装](https://istio.io/zh/docs/setup/install/helm/)的方式，需改用 [istioctl 安装](https://istio.io/zh/docs/setup/install/istioctl/)。
 
 ## 下载 istio
 
@@ -19,7 +19,7 @@
 使用如下命令将 `istioctl` 客户端路径加入 $PATH 中：
 `export PATH=$PATH:$(pwd)/bin`{{execute}}
 
-截止目前，我们已经可以使用高度自定义 Istio 控制平面和数据平面的 `istioctl` 命令行工具。 该命令行工具具有用户输入校验功能，可以防止错误的安装和自定义选项。
+截止目前，我们已经可以通过 `istioctl` 命令行工具来灵活的自定义 Istio 控制平面和数据平面配置参数。 该命令行工具具有用户输入校验功能，可以防止错误的安装和自定义选项。
 
 使用如下命令，查看更多关于 `istioctl` 的信息：
 `istioctl -h`{{execute}}

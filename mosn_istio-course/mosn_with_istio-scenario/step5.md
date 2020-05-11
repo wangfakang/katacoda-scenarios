@@ -22,3 +22,7 @@ https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/produc
 
 https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/productpage
 
+
+## 后续步骤
+
+上面我们已经体验了 MOSN 在 Istio 下的版本路由功能，接下来我们来验证下 MOSN 中的 Header 路由能力。
